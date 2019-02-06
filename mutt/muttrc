@@ -1,0 +1,44 @@
+# Use sugesh@email.com as the From: address
+set realname="Sugesh Chandran"
+set from="sugesh@email.com"
+set use_from=yes
+# Let mutt mark mail as addressed to you if you have e-mail addresses on multiple domains
+alternates "sugesh@email.com|sugesh@email.example.com"
+#
+# INBOX and connetion settings.
+set imap_user = 'sugesh'
+set spoolfile = "imaps://smtp.email.com:2765/TO-ME"
+set mbox = "imaps://smtp.email.com:2765/TO-ME"
+set folder = "imaps://smtp.email.com:2765/"
+#
+# Use a signature file:
+set signature="~/.signature"
+#
+# Postponed mail goes to the Exchange Drafts folder
+set postponed="=Drafts"
+#
+# Sent mail goes to the Exchange Sent Items folder
+set record="=Sent Items"
+#
+# Deleted mail goes to the Exchange Deleted Items folder
+set trash="=Deleted Items"
+#
+# Define mailboxes. Remember that the = means to prepend
+# our "folder" setting from above.
+mailboxes =INBOX
+mailboxes "=TO-ME"
+#
+# Defining these special mailboxes makes it easier to
+# switch to them, but has the disadvantage of making
+# mutt check for new mail in them.
+mailboxes "=Deleted Items"
+mailboxes "=Drafts"
+mailboxes "=Sent Items"
+#
+# Defining the mailing lists that you are subscribed
+# to allows you to use the 'l' feature to reply only
+# to the list
+subscribe linux-dev
+# Lastly, tell Mutt to interpret text/html emails by default
+# for easier reading.  This is purely optional
+auto_view text/html

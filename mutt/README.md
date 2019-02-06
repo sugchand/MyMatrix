@@ -38,15 +38,15 @@ These key bindings will work on almost any menu you are in.
 
         | command    | description |
         |------------|-------------|
-*       | *          | Move to last entry *
-*       | =          | Move to first entry *
+**      | *          | Move to last entry **
+**      | =          | Move to first entry **
         | :          | Enter muttrc command
         | >          | Scroll down one line
         | <          | Scroll up one line
         | [          | Scroll up half a page
         | ]          | Scroll down half a page
         | ?          | Help
-*       | ;          | Apply next function to tagged messages only *
+**      | ;          | Apply next function to tagged messages only **
         | !          | Invoke command in subshell
         | return     | Select the current entry
         | esc + /    | Search up
@@ -58,10 +58,10 @@ These key bindings will work on almost any menu you are in.
         | L          | Move to bottom of page
         | M          | Move to middle of page
         | n          | Move to next match of search
-*       | q          | Exit menu *
-*       | t          | Tag current entry *
-*       | z          | Move to next page *
-*       | Z          | Move to previous page *
+**      | q          | Exit menu **
+**      | t          | Tag current entry **
+**      | z          | Move to next page **
+**      | Z          | Move to previous page **
 
 #### Index Menu
 
@@ -77,12 +77,12 @@ When you first open mutt you are in the index menu.
         | @             |  Display full address of sender
         | |             |  Pipe message to a shell command
         | esc + tab     |  Jump to previous new or unread message
-*       | return        |  Display message *
+**      | return        |  Display message **
         | tab           |  Jump to next new or unread message
         | a             |  Create alias from message sender
         | b             |  Remail message to another user
         | esc + c       |  Open a different folder (Read Only)
-*       | c             |  Open a different folder *
+**      | c             |  Open a different folder **
         | esc + C       |  Make text/plain copy
         | C             |  Copy message to another file/mailbox
         | esc + d       |  Delete all messages in subthread
@@ -123,7 +123,7 @@ When you first open mutt you are in the index menu.
         | R             |  Recall a postponed message
         | esc + r       |  Mark current subthread as read
         | esc + s       |  Save text/plain copy and delete
-*       | s             |  Save message/attachment to mailbox/file *
+**      | s             |  Save message/attachment to mailbox/file **
         | esc + t       |  Tag current thread
         | ctrl + T      |  Untag messages matching a pattern
         | T             |  Tag messages matching pattern
