@@ -5,11 +5,11 @@ The tmux configuration file I used for my machine is 'tmux.conf' in the direccto
 ## TMUX shortcuts
 ```
 
-| ShortCut    	| Usage                                                            	|
-|-------------	|------------------------------------------------------------------	|
-| tmux new -t 	| Create a,new tmux session in new tab                             	|
-| tmux new -s 	| Create new session                                               	|
-| Ctrl d      	| Exit the tmux session inside(if its last window for the session) 	|
+| ShortCut      | Usage                                                             |
+|-------------  |------------------------------------------------------------------ |
+| tmux new -t   | Create a,new tmux session in new tab                              |
+| tmux new -s   | Create new session                                                |
+| Ctrl d        | Exit the tmux session inside(if its last window for the session)  |
 
 ```
 
@@ -19,24 +19,25 @@ After a session is created windows can be created inside session, also each wind
 
  ```
  
- | ShortCut 	| Usage                              	|
-|----------	|------------------------------------	|
-| CtrlA c  	| Create a new window in the session 	|
-| CtrlA p  	| Switch to previous window          	|
-| CtrlA n  	| Switch to next window              	|
-| Ctrl d   	| Exit the tmux session window.      	|
+ | ShortCut     | Usage                                 |
+|---------- |------------------------------------   |
+| CtrlA c   | Create a new window in the session    |
+| CtrlA p   | Switch to previous window             |
+| CtrlA n   | Switch to next window                 |
+| Ctrl d    | Exit the tmux session window.         |
 
 ```
 
 ```
-| ShortCut           	| Usage                         	|
-|--------------------	|-------------------------------	|
-| CtrlA -            	| Split pane horizontal         	|
-| CtrlA |            	| Split pane vertical           	|
-| CtrlA <space>      	| Toggle pane arrangement       	|
-| CtrlA d            	| Detach the tmux session       	|
-| CtrlA s            	| List all the created sessions 	|
-| CtrlA ,            	| To rename the created window  	|
-| CtrlA <Arrow Keys> 	| Switch between panes.         	|
+| ShortCut              | Usage                             |
+|--------------------   |-------------------------------    |
+| CtrlA -               | Split pane horizontal             |
+| CtrlA |               | Split pane vertical               |
+| CtrlA <space>         | Toggle pane arrangement           |
+| CtrlA d               | Detach the tmux session           |
+| CtrlA s               | List all the created sessions     |
+| CtrlA ,               | To rename the created window      |
+| CtrlA <Arrow Keys>    | Switch between panes.             |
+| CtrlA z               | Maximize active pane.             |
 
 ```
