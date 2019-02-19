@@ -7,6 +7,8 @@ set nocompatible
 set autoindent
 " use intelligent indentation for C
 set smartindent
+" configure the backspace to delete
+set backspace=2
 " configure tabwidth and insert spaces instead of tabs
 set tabstop=4        " tab width is 4 spaces
 set shiftwidth=4     " indent also with 4 spaces
