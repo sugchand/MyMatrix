@@ -19,7 +19,7 @@ After a session is created windows can be created inside session, also each wind
 
  ```
  
- | ShortCut     | Usage                                 |
+| ShortCut     | Usage                              |
 |---------- |------------------------------------   |
 | CtrlA c   | Create a new window in the session    |
 | CtrlA p   | Switch to previous window             |
