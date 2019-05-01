@@ -2,7 +2,7 @@
 
 # Author: Sugesh Chandran <sugeshchandran@gmail.com>                           
 
-REPO=/tmp/repo
+REPO=$1
 FILELIST=cscope.tags.lst
 
 if [ ! -d "$REPO" ]; then
