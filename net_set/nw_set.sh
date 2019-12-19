@@ -13,7 +13,7 @@ HOST_INT=""
 
 function is_root() {
     if [[ $EUID -ne 0 ]]; then
-        echo "This script must be run as root" 
+        echo "This script must be run as root"
           exit 1
     fi
 }
@@ -23,12 +23,12 @@ function flush_ip_linux() {
 }
 
 function set_ip_linux() {
-    echo "setting ip address to $HOST_IP_MASK on $HOST_INT" 
+    echo "setting ip address to $HOST_IP_MASK on $HOST_INT"
     if [ "${HOST_IP_MASK,,}" == "dhcp" ]; then
         dhclient -r $HOST_INT
         return
     fi
-    ip addr add $HOST_IP_MASK dev $HOST_INT 
+    ip addr add $HOST_IP_MASK dev $HOST_INT
 }
 
 function flush_ip_gw_linux() {
@@ -48,6 +48,16 @@ function set_ip_dns_linux() {
         return
     fi
     echo "TODO for dns setting"
+}
+
+function reset_network_service() {
+    systemctl restart networking.service
+    systemctl status networking.service
+}
+
+function stop_network_service() {
+    systemctl stop networking.service
+    systemctl status networking.service
 }
 
 function find_and_set_interface() {
@@ -74,7 +84,7 @@ function find_and_set_interface() {
 }
 
 function display_nw() {
-    printf "\n\n***********************************************\n" 
+    printf "\n\n***********************************************\n"
     ip addr show dev $HOST_INT
     printf "\n***********************************************\n"
     ip route show
