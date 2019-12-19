@@ -2,6 +2,8 @@
 
 The tmux configuration file I used for my machine is 'tmux.conf' in the direcctory. copy the file to '~/.tmux.conf' for using the new mapping and settings.
 
+In case if you are using tmux version >= 2.9, use 'tmux-2.9.conf' instead of tmux.conf. Use 'tmux -V' to find the version of installed tmux.
+
 ## TMUX shortcuts
 ```
 
